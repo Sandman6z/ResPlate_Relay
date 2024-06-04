@@ -2,6 +2,7 @@
 "resplate_relay\startup_stm32g030xx.o"
 "resplate_relay\main.o"
 "resplate_relay\gpio.o"
+"resplate_relay\tim.o"
 "resplate_relay\stm32g0xx_it.o"
 "resplate_relay\stm32g0xx_hal_msp.o"
 "resplate_relay\stm32g0xx_hal_tim.o"

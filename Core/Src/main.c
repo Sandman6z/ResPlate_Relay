@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "tim.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -86,8 +87,11 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_TIM16_Init();
+  MX_TIM17_Init();
   /* USER CODE BEGIN 2 */
-
+    HAL_TIM_Base_Start_IT(&htim16);
+    HAL_TIM_Base_Start_IT(&htim17);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -145,6 +149,21 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+  /* Prevent unused argument(s) compilation warning */
+  UNUSED(htim);
+    if (htim->Instance == TIM16)
+    {
+        HAL_GPIO_TogglePin(RELAY_CTRL1_GPIO_Port, RELAY_CTRL1_Pin);  // switch every 1 second
+    }
+    else if (htim->Instance == TIM17)
+    {
+        HAL_GPIO_TogglePin(LED_Indicate_GPIO_Port, LED_Indicate_Pin);  // switch every 2 seconds
+    }
+
+}
 
 /* USER CODE END 4 */
 
