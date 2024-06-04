@@ -162,7 +162,6 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     {
         HAL_GPIO_TogglePin(LED_Indicate_GPIO_Port, LED_Indicate_Pin);  // switch every 2 seconds
     }
-
 }
 
 /* USER CODE END 4 */

@@ -353,12 +353,11 @@ ARM Macro Assembler    Page 6
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0+ --apcs=inter
 work --depend=resplate_relay\startup_stm32g030xx.d -oresplate_relay\startup_stm
-32g030xx.o -I.\RTE\_ResPlate_Relay -IC:\Users\Bitch\AppData\Local\Arm\Packs\ARM
-\CMSIS\5.9.0\CMSIS\Core\Include -IC:\Users\Bitch\AppData\Local\Arm\Packs\Keil\S
+32g030xx.o -I.\RTE\_ResPlate_Relay -IC:\Users\zbn02\AppData\Local\arm\packs\ARM
+\CMSIS\6.1.0\CMSIS\Core\Include -IC:\Users\zbn02\AppData\Local\arm\packs\Keil\S
 TM32G0xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include --predefine="__UVI
-SION_VERSION SETA 539" --predefine="_RTE_ SETA 1" --predefine="STM32G030xx SETA
- 1" --predefine="_RTE_ SETA 1" --list=startup_stm32g030xx.lst startup_stm32g030
-xx.s
+SION_VERSION SETA 540" --predefine="STM32G030xx SETA 1" --predefine="_RTE_ SETA
+ 1" --list=startup_stm32g030xx.lst startup_stm32g030xx.s
 
 
 
