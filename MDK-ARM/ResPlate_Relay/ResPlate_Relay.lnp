@@ -1,0 +1,27 @@
+--cpu Cortex-M0+
+"resplate_relay\startup_stm32g030xx.o"
+"resplate_relay\main.o"
+"resplate_relay\gpio.o"
+"resplate_relay\stm32g0xx_it.o"
+"resplate_relay\stm32g0xx_hal_msp.o"
+"resplate_relay\stm32g0xx_hal_tim.o"
+"resplate_relay\stm32g0xx_hal_tim_ex.o"
+"resplate_relay\stm32g0xx_hal_rcc.o"
+"resplate_relay\stm32g0xx_hal_rcc_ex.o"
+"resplate_relay\stm32g0xx_ll_rcc.o"
+"resplate_relay\stm32g0xx_hal_flash.o"
+"resplate_relay\stm32g0xx_hal_flash_ex.o"
+"resplate_relay\stm32g0xx_hal_gpio.o"
+"resplate_relay\stm32g0xx_hal_dma.o"
+"resplate_relay\stm32g0xx_hal_dma_ex.o"
+"resplate_relay\stm32g0xx_ll_dma.o"
+"resplate_relay\stm32g0xx_hal_pwr.o"
+"resplate_relay\stm32g0xx_hal_pwr_ex.o"
+"resplate_relay\stm32g0xx_hal_cortex.o"
+"resplate_relay\stm32g0xx_hal.o"
+"resplate_relay\stm32g0xx_hal_exti.o"
+"resplate_relay\system_stm32g0xx.o"
+--strict --scatter "ResPlate_Relay\ResPlate_Relay.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ResPlate_Relay.map" -o ResPlate_Relay\ResPlate_Relay.axf

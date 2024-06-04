@@ -57,6 +57,40 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define LED_Indicate_Pin GPIO_PIN_3
+#define LED_Indicate_GPIO_Port GPIOA
+#define RELAY_CTRL1_Pin GPIO_PIN_4
+#define RELAY_CTRL1_GPIO_Port GPIOA
+#define RELAY_CTRL2_Pin GPIO_PIN_5
+#define RELAY_CTRL2_GPIO_Port GPIOA
+#define RELAY_CTRL3_Pin GPIO_PIN_6
+#define RELAY_CTRL3_GPIO_Port GPIOA
+#define RELAY_CTRL4_Pin GPIO_PIN_7
+#define RELAY_CTRL4_GPIO_Port GPIOA
+#define RELAY_CTRL5_Pin GPIO_PIN_0
+#define RELAY_CTRL5_GPIO_Port GPIOB
+#define RELAY_CTRL6_Pin GPIO_PIN_1
+#define RELAY_CTRL6_GPIO_Port GPIOB
+#define RELAY_CTRL7_Pin GPIO_PIN_2
+#define RELAY_CTRL7_GPIO_Port GPIOB
+#define RELAY_CTRL8_Pin GPIO_PIN_10
+#define RELAY_CTRL8_GPIO_Port GPIOB
+#define RELAY_CTRL9_Pin GPIO_PIN_8
+#define RELAY_CTRL9_GPIO_Port GPIOA
+#define RELAY_CTRL10_Pin GPIO_PIN_9
+#define RELAY_CTRL10_GPIO_Port GPIOA
+#define RELAY_CTRL11_Pin GPIO_PIN_10
+#define RELAY_CTRL11_GPIO_Port GPIOA
+#define RELAY_CTRL12_Pin GPIO_PIN_11
+#define RELAY_CTRL12_GPIO_Port GPIOA
+#define RELAY_CTRL13_Pin GPIO_PIN_5
+#define RELAY_CTRL13_GPIO_Port GPIOB
+#define RELAY_CTRL14_Pin GPIO_PIN_6
+#define RELAY_CTRL14_GPIO_Port GPIOB
+#define RELAY_CTRL15_Pin GPIO_PIN_7
+#define RELAY_CTRL15_GPIO_Port GPIOB
+#define RELAY_CTRL16_Pin GPIO_PIN_8
+#define RELAY_CTRL16_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
