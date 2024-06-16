@@ -41,7 +41,11 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
+volatile uint32_t pwmCounter4s = 0;
+volatile uint8_t pwmState4s = 0;
 
+volatile uint32_t pwmCounter1s = 0;
+volatile uint8_t pwmState1s = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/

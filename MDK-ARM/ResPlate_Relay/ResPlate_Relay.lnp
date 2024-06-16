@@ -22,7 +22,7 @@
 "resplate_relay\stm32g0xx_hal.o"
 "resplate_relay\stm32g0xx_hal_exti.o"
 "resplate_relay\system_stm32g0xx.o"
---strict --scatter "ResPlate_Relay\ResPlate_Relay.sct"
+--library_type=microlib --strict --scatter "ResPlate_Relay\ResPlate_Relay.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "ResPlate_Relay.map" -o ResPlate_Relay\ResPlate_Relay.axf

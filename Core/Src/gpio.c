@@ -50,20 +50,20 @@ void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, LED_Indicate_Pin|RELAY_CTRL1_Pin|RELAY_CTRL2_Pin|RELAY_CTRL3_Pin
-                          |RELAY_CTRL4_Pin|RELAY_CTRL9_Pin|RELAY_CTRL10_Pin|RELAY_CTRL11_Pin
-                          |RELAY_CTRL12_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, LEDIndicate_Pin|relayCtrl1_Pin|relayCtrl2_Pin|relayCtrl3_Pin
+                          |relayCtrl4_Pin|relayCtrl9_Pin|relayCtrl10_Pin|relayCtrl11_Pin
+                          |relayCtrl12_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, RELAY_CTRL5_Pin|RELAY_CTRL6_Pin|RELAY_CTRL7_Pin|RELAY_CTRL8_Pin
-                          |RELAY_CTRL13_Pin|RELAY_CTRL14_Pin|RELAY_CTRL15_Pin|RELAY_CTRL16_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, relayCtrl5_Pin|relayCtrl6_Pin|relayCtrl7_Pin|relayCtrl8_Pin
+                          |relayCtrl13_Pin|relayCtrl14_Pin|relayCtrl15_Pin|relayCtrl16_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : PAPin PAPin PAPin PAPin
                            PAPin PAPin PAPin PAPin
                            PAPin */
-  GPIO_InitStruct.Pin = LED_Indicate_Pin|RELAY_CTRL1_Pin|RELAY_CTRL2_Pin|RELAY_CTRL3_Pin
-                          |RELAY_CTRL4_Pin|RELAY_CTRL9_Pin|RELAY_CTRL10_Pin|RELAY_CTRL11_Pin
-                          |RELAY_CTRL12_Pin;
+  GPIO_InitStruct.Pin = LEDIndicate_Pin|relayCtrl1_Pin|relayCtrl2_Pin|relayCtrl3_Pin
+                          |relayCtrl4_Pin|relayCtrl9_Pin|relayCtrl10_Pin|relayCtrl11_Pin
+                          |relayCtrl12_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -71,8 +71,8 @@ void MX_GPIO_Init(void)
 
   /*Configure GPIO pins : PBPin PBPin PBPin PBPin
                            PBPin PBPin PBPin PBPin */
-  GPIO_InitStruct.Pin = RELAY_CTRL5_Pin|RELAY_CTRL6_Pin|RELAY_CTRL7_Pin|RELAY_CTRL8_Pin
-                          |RELAY_CTRL13_Pin|RELAY_CTRL14_Pin|RELAY_CTRL15_Pin|RELAY_CTRL16_Pin;
+  GPIO_InitStruct.Pin = relayCtrl5_Pin|relayCtrl6_Pin|relayCtrl7_Pin|relayCtrl8_Pin
+                          |relayCtrl13_Pin|relayCtrl14_Pin|relayCtrl15_Pin|relayCtrl16_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
