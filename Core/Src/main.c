@@ -155,20 +155,22 @@ void SystemClock_Config(void)
 /* Timer callback functions */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
-  if (htim->Instance == TIM16)
-  {
+    UNUSED(htim);
+    
+    if (htim->Instance == TIM16)
+    {
     /* Toggle relayCtrl12 every 1 second */
     relayCtrl12State = !relayCtrl12State;
     HAL_GPIO_WritePin(relayCtrl12_GPIO_Port, relayCtrl12_Pin, relayCtrl12State);
     relayCtrl12State = HAL_GPIO_ReadPin(relayCtrl12_GPIO_Port, relayCtrl12_Pin);
-  }
-  else if (htim->Instance == TIM17)
-  {
+    }
+    else if (htim->Instance == TIM17)
+    {
     /* Toggle relayCtrl14 every 4 seconds */
     relayCtrl14State = !relayCtrl14State;
     HAL_GPIO_WritePin(relayCtrl14_GPIO_Port, relayCtrl14_Pin, relayCtrl14State);
     relayCtrl14State = HAL_GPIO_ReadPin(relayCtrl14_GPIO_Port, relayCtrl14_Pin);
-  }
+    }
 }
 
 /* USER CODE END 4 */
