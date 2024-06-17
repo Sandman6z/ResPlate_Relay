@@ -1,8 +1,8 @@
 Dependencies for Project 'ResPlate_Relay', Target 'ResPlate_Relay': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
 F (startup_stm32g030xx.s)(0x666E1DD4)(--cpu Cortex-M0+ -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_ResPlate_Relay-IC:\Users\zbn02\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\zbn02\AppData\Local\Arm\Packs\Keil\STM32G0xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include--pd "__UVISION_VERSION SETA 540" --pd "STM32G030xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32g030xx.lst --xref -o resplate_relay\startup_stm32g030xx.o --depend resplate_relay\startup_stm32g030xx.d)
-F (../Core/Src/main.c)(0x666E27B2)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_ResPlate_Relay-IC:\Users\zbn02\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\zbn02\AppData\Local\Arm\Packs\Keil\STM32G0xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="540" -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o resplate_relay\main.o --omf_browse resplate_relay\main.crf --depend resplate_relay\main.d)
-I (../Core/Inc/main.h)(0x666E1DD0)
+F (../Core/Src/main.c)(0x666FA0AC)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_ResPlate_Relay-IC:\Users\zbn02\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\zbn02\AppData\Local\Arm\Packs\Keil\STM32G0xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="540" -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o resplate_relay\main.o --omf_browse resplate_relay\main.crf --depend resplate_relay\main.d)
+I (../Core/Inc/main.h)(0x666E2D69)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x665DFF63)
 I (../Core/Inc/stm32g0xx_hal_conf.h)(0x666B9159)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x665DFF63)
@@ -36,9 +36,9 @@ I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x665DFF63)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x665DFF63)
 I (../Core/Inc/tim.h)(0x666B9159)
 I (../Core/Inc/gpio.h)(0x666B9159)
-F (../Core/Src/gpio.c)(0x666E1DCD)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_ResPlate_Relay-IC:\Users\zbn02\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\zbn02\AppData\Local\Arm\Packs\Keil\STM32G0xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="540" -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o resplate_relay\gpio.o --omf_browse resplate_relay\gpio.crf --depend resplate_relay\gpio.d)
+F (../Core/Src/gpio.c)(0x666E2D69)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_ResPlate_Relay-IC:\Users\zbn02\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\zbn02\AppData\Local\Arm\Packs\Keil\STM32G0xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="540" -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o resplate_relay\gpio.o --omf_browse resplate_relay\gpio.crf --depend resplate_relay\gpio.d)
 I (../Core/Inc/gpio.h)(0x666B9159)
-I (../Core/Inc/main.h)(0x666E1DD0)
+I (../Core/Inc/main.h)(0x666E2D69)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x665DFF63)
 I (../Core/Inc/stm32g0xx_hal_conf.h)(0x666B9159)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x665DFF63)
@@ -70,9 +70,9 @@ I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x665DFF63)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x665DFF63)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x665DFF63)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x665DFF63)
-F (../Core/Src/tim.c)(0x666BA3F6)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_ResPlate_Relay-IC:\Users\zbn02\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\zbn02\AppData\Local\Arm\Packs\Keil\STM32G0xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="540" -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o resplate_relay\tim.o --omf_browse resplate_relay\tim.crf --depend resplate_relay\tim.d)
+F (../Core/Src/tim.c)(0x666E2D69)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_ResPlate_Relay-IC:\Users\zbn02\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\zbn02\AppData\Local\Arm\Packs\Keil\STM32G0xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="540" -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o resplate_relay\tim.o --omf_browse resplate_relay\tim.crf --depend resplate_relay\tim.d)
 I (../Core/Inc/tim.h)(0x666B9159)
-I (../Core/Inc/main.h)(0x666E1DD0)
+I (../Core/Inc/main.h)(0x666E2D69)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x665DFF63)
 I (../Core/Inc/stm32g0xx_hal_conf.h)(0x666B9159)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x665DFF63)
@@ -104,8 +104,8 @@ I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x665DFF63)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x665DFF63)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x665DFF63)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x665DFF63)
-F (../Core/Src/stm32g0xx_it.c)(0x666BA822)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_ResPlate_Relay-IC:\Users\zbn02\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\zbn02\AppData\Local\Arm\Packs\Keil\STM32G0xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="540" -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o resplate_relay\stm32g0xx_it.o --omf_browse resplate_relay\stm32g0xx_it.crf --depend resplate_relay\stm32g0xx_it.d)
-I (../Core/Inc/main.h)(0x666E1DD0)
+F (../Core/Src/stm32g0xx_it.c)(0x666E2D69)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_ResPlate_Relay-IC:\Users\zbn02\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\zbn02\AppData\Local\Arm\Packs\Keil\STM32G0xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="540" -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o resplate_relay\stm32g0xx_it.o --omf_browse resplate_relay\stm32g0xx_it.crf --depend resplate_relay\stm32g0xx_it.d)
+I (../Core/Inc/main.h)(0x666E2D69)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x665DFF63)
 I (../Core/Inc/stm32g0xx_hal_conf.h)(0x666B9159)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x665DFF63)
@@ -139,7 +139,7 @@ I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x665DFF63)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x665DFF63)
 I (../Core/Inc/stm32g0xx_it.h)(0x666B9159)
 F (../Core/Src/stm32g0xx_hal_msp.c)(0x666B9159)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_ResPlate_Relay-IC:\Users\zbn02\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\zbn02\AppData\Local\Arm\Packs\Keil\STM32G0xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="540" -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx-o resplate_relay\stm32g0xx_hal_msp.o --omf_browse resplate_relay\stm32g0xx_hal_msp.crf --depend resplate_relay\stm32g0xx_hal_msp.d)
-I (../Core/Inc/main.h)(0x666E1DD0)
+I (../Core/Inc/main.h)(0x666E2D69)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x665DFF63)
 I (../Core/Inc/stm32g0xx_hal_conf.h)(0x666B9159)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x665DFF63)

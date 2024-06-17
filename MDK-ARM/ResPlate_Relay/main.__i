@@ -1,6 +1,0 @@
---c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include
--I.\RTE\_ResPlate_Relay
--IC:\Users\zbn02\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include
--IC:\Users\zbn02\AppData\Local\Arm\Packs\Keil\STM32G0xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include
--D__UVISION_VERSION="540" -DSTM32G030xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G030xx
--o resplate_relay\main.o --omf_browse resplate_relay\main.crf --depend resplate_relay\main.d "../Core/Src/main.c"
