@@ -56,9 +56,8 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 /* Variables to store the state of the relays */
-uint8_t relayCtrl12State = 0;
-uint8_t relayCtrl14State = 1;
-uint8_t LEDIndicateState = 0;
+uint8_t cycle_2s = 0;
+uint8_t cycle_4s = 1;
 /* USER CODE END 0 */
 
 /**
@@ -160,18 +159,20 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     
     if (htim->Instance == TIM16)
     {
-    /* Toggle relayCtrl12 every 1 second */
-    relayCtrl12State = !relayCtrl12State;
-    HAL_GPIO_WritePin(relayCtrl12_GPIO_Port, relayCtrl12_Pin, relayCtrl12State);
-    relayCtrl12State = HAL_GPIO_ReadPin(relayCtrl12_GPIO_Port, relayCtrl12_Pin);
+    /* Toggle every 1 second */
+    cycle_2s = !cycle_2s;
+    HAL_GPIO_WritePin(relayCtrl12_GPIO_Port, relayCtrl12_Pin, cycle_2s);
+    HAL_GPIO_WritePin(relayCtrl5_GPIO_Port, relayCtrl5_Pin, cycle_2s);
+//    cycle_2s = HAL_GPIO_ReadPin(relayCtrl12_GPIO_Port, relayCtrl12_Pin);
     }
     else if (htim->Instance == TIM17)
     {
-    /* Toggle relayCtrl14 every 4 seconds */
-    HAL_GPIO_WritePin(LEDIndicate_GPIO_Port, LEDIndicate_Pin, LEDIndicateState);
-    relayCtrl14State = !relayCtrl14State;
-    HAL_GPIO_WritePin(relayCtrl14_GPIO_Port, relayCtrl14_Pin, relayCtrl14State);
-    relayCtrl14State = HAL_GPIO_ReadPin(relayCtrl14_GPIO_Port, relayCtrl14_Pin);
+    /* Toggle every 4 seconds */
+    HAL_GPIO_WritePin(LEDIndicate_GPIO_Port, LEDIndicate_Pin, cycle_4s);
+    cycle_4s = !cycle_4s;
+    HAL_GPIO_WritePin(relayCtrl14_GPIO_Port, relayCtrl14_Pin, cycle_4s);
+    HAL_GPIO_WritePin(relayCtrl3_GPIO_Port, relayCtrl3_Pin, cycle_2s);
+//    cycle_4s = HAL_GPIO_ReadPin(relayCtrl14_GPIO_Port, relayCtrl14_Pin);
     }
 }
 
