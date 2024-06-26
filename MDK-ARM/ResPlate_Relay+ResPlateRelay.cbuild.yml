@@ -1,0 +1,12 @@
+build:
+  generated-by: csolution version 2.4.0
+  solution: ResPlate_Relay.csolution.yml
+  project: ResPlate_Relay.cproject.yml
+  context: ResPlate_Relay+ResPlateRelay
+  output-dirs:
+    intdir: tmp/ResPlate_Relay/ResPlateRelay
+    outdir: out/ResPlate_Relay/ResPlateRelay
+    rtedir: RTE
+  constructed-files:
+    - file: ../../../../../Program Files/Microsoft VS Code/RTE/_ResPlateRelay/RTE_Components.h
+      category: header

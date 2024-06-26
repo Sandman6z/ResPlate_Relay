@@ -161,8 +161,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     {
     /* Toggle every 1 second */
     cycle_2s = !cycle_2s;
-    HAL_GPIO_WritePin(relayCtrl12_GPIO_Port, relayCtrl12_Pin, cycle_2s);
-    HAL_GPIO_WritePin(relayCtrl5_GPIO_Port, relayCtrl5_Pin, cycle_2s);
+    
 //    cycle_2s = HAL_GPIO_ReadPin(relayCtrl12_GPIO_Port, relayCtrl12_Pin);
     }
     else if (htim->Instance == TIM17)
@@ -170,9 +169,14 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     /* Toggle every 4 seconds */
     HAL_GPIO_WritePin(LEDIndicate_GPIO_Port, LEDIndicate_Pin, cycle_4s);
     cycle_4s = !cycle_4s;
+        
+    HAL_GPIO_WritePin(relayCtrl12_GPIO_Port, relayCtrl12_Pin, cycle_4s);
+    HAL_GPIO_WritePin(relayCtrl5_GPIO_Port, relayCtrl5_Pin, cycle_4s);
+        
     HAL_GPIO_WritePin(relayCtrl14_GPIO_Port, relayCtrl14_Pin, cycle_4s);
-    HAL_GPIO_WritePin(relayCtrl3_GPIO_Port, relayCtrl3_Pin, cycle_2s);
-//    cycle_4s = HAL_GPIO_ReadPin(relayCtrl14_GPIO_Port, relayCtrl14_Pin);
+    HAL_GPIO_WritePin(relayCtrl3_GPIO_Port, relayCtrl3_Pin, cycle_4s);
+        
+    cycle_4s = HAL_GPIO_ReadPin(relayCtrl14_GPIO_Port, relayCtrl14_Pin);
     }
 }
 

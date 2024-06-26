@@ -1,0 +1,10 @@
+build-idx:
+  generated-by: csolution version 2.4.0
+  csolution: ResPlate_Relay.csolution.yml
+  cprojects:
+    - cproject: ResPlate_Relay.cproject.yml
+  cbuilds:
+    - cbuild: ResPlate_Relay+ResPlateRelay.cbuild.yml
+      project: ResPlate_Relay
+      configuration: +ResPlateRelay
+      errors: true

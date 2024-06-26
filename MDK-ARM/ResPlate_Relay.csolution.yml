@@ -1,0 +1,10 @@
+solution:
+  created-by: uv2csolution@1.4.0
+  created-for: CMSIS-Toolbox@2.3.0
+  compiler: AC6
+  target-types:
+    - type: ResPlateRelay
+      device: STM32G030C6Tx
+      optimize: debug
+  projects:
+    - project: ResPlate_Relay.cproject.yml
