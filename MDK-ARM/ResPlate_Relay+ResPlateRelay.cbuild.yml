@@ -8,5 +8,4 @@ build:
     outdir: out/ResPlate_Relay/ResPlateRelay
     rtedir: RTE
   constructed-files:
-    - file: ../../../../../Program Files/Microsoft VS Code/RTE/_ResPlateRelay/RTE_Components.h
-      category: header
+    - category: header
